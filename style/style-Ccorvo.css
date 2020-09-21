@@ -29,7 +29,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    font-size: 62.5%;
 }
 ol, ul {
 	list-style: none;
@@ -52,11 +53,17 @@ a {
 }
 
 * {
-    border:1px solid black;  /* remove this line when you are done. */
+    border:1px solid black; 
     text-decoration: none;
 }
 
-/* Page styles begin below this line */
+/* --------- Page styles begin below this line ----------------*/
+
+html{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
 
 header{
     display: flex;
@@ -64,18 +71,23 @@ header{
     justify-content: space-between;
 }
 
+.DevDeskLogo{
+    font-size: 1.5rem;
+}
 header nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;  
+    font-size: 1rem;
 }
 
 .WebApps-link{
     background-color: darkgray;
     padding: 5%;
+    font-size: 1.5rem;
 
 }
-
+/*  -------------  Main Content --- This is where your eyes will hit first */
 .Main-Call-To-Action {
     display: flex;
     flex-direction: column;
@@ -83,6 +95,24 @@ header nav {
     padding-top: 10%;
     padding-bottom: 10%;
 }
+
+.Main-Call-To-Action h1{
+    font-size: 4rem;
+    margin-bottom: 2%;
+}
+
+.Main-Call-To-Action p{
+    font-size: 1.5rem;
+    width: 55%;
+}
+
+.Main-Call-To-Action a{
+    font-size: 1.5rem;
+    background: darkgray;
+    padding: 1.5%;
+}
+
+/* ------------ Three blurbs with content --------------------- */
 .News-Updates {
     display: flex;
     flex-direction: row;
@@ -90,13 +120,75 @@ header nav {
     padding-bottom: 10%;
 }
 
-.Square-Preview {
+.square-preview {
+    display: flex;
+    flex-direction: column;
+    background: lightgray;
+    margin-left: 1%;
+}
+
+.square-preview h2 {
+    font-size: 1rem;
+}
+
+.square-preview h3 {
+    font-size: 1.5rem;
+}
+
+.square-preview a, p {
+    font-size: 1rem;
+}
+
+/* ------ free trial section -----------------------------------*/
+.free-trial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10%;
+}
+
+.free-trial h2{
+    font-size: 2rem;
+}
+
+.free-trial a{
+    font-size: 1.5rem;
+    background: darkgray;
+    padding: 2%;
+}
+
+/* ----------footer styles-------------------------------------  */
+footer{
+    display: flex;    
+    flex-direction: column;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.links-container{
     display: flex;
     flex-direction: column;
 }
 
-.Free-Trial {
+.links-container nav{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; 
+    font-size: 1rem;
+}
+
+.links-container h3 {
+    font-size: 1.5rem;
+}
+/* -------------------------------------------------------------- */
+.EmailForm-SocialMedia-Container{
+    display: flex;
+    flex-direction: row;
+}
+
+.socialMedia-icons{
+    padding-left: 45%;
 }
