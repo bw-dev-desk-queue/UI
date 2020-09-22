@@ -60,15 +60,19 @@ a {
 /* --------- Page styles begin below this line ----------------*/
 
 html{
-    margin-left: 2%;
-    margin-right: 2%;
-    margin-top: 2%;
+    background: #FFFFFF;
 }
 
 header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    
 }
 
 .DevDeskLogo{
@@ -77,13 +81,19 @@ header{
 header nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;  
-    font-size: 1rem;
+    justify-content: space-between; 
+    font-size: 1.2rem;
+    width: 40%;
 }
 
 .WebApps-link{
-    background-color: darkgray;
-    padding: 5%;
+    background-color: #4571C9;
+    
+    border-radius: 12px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
     font-size: 1.5rem;
 
 }
@@ -108,23 +118,33 @@ header nav {
 
 .Main-Call-To-Action a{
     font-size: 1.5rem;
-    background: darkgray;
-    padding: 1.5%;
+    background: #4571C9;
+    border-radius: 12px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 /* ------------ Three blurbs with content --------------------- */
 .News-Updates {
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
     padding-bottom: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: F7F7F7;
+    
 }
 
 .square-preview {
     display: flex;
     flex-direction: column;
     background: lightgray;
-    margin-left: 1%;
+    width: 30%;
+    margin-right: 4%;
+    border-bottom: 5px solid black;
+
 }
 
 .square-preview h2 {
@@ -153,14 +173,20 @@ header nav {
 
 .free-trial a{
     font-size: 1.5rem;
-    background: darkgray;
-    padding: 2%;
+    background: #4571C9;
+    border-radius: 12px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 /* ----------footer styles-------------------------------------  */
 footer{
     display: flex;    
     flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .footer-links {
@@ -172,6 +198,7 @@ footer{
 .links-container{
     display: flex;
     flex-direction: column;
+    margin-bottom: 2%;
 }
 
 .links-container nav{
@@ -187,8 +214,33 @@ footer{
 .EmailForm-SocialMedia-Container{
     display: flex;
     flex-direction: row;
+    margin-bottom: 2%;
+    background: gray;
+}
+
+.EmailForm-SocialMedia-Container form {
+    background: blue;
+    width: 40%;
+}
+.EmailForm-SocialMedia-Container form input{
+    border: 5px solid black;
+    padding: 5%;
+    width: 50%;
+    
 }
 
 .socialMedia-icons{
-    padding-left: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background: honeydew;
+    width: 45%;
+}
+
+.socialMedia-icons a {
+    padding-left: 2%;
+}
+
+.copywrite-info {
+    font-size: 1rem;
 }
