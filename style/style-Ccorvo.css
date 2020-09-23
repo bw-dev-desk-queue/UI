@@ -89,16 +89,20 @@ header nav {
 }
 
 .WebApps-container{
+    display: flex;
+    justify-content: flex-end;
     padding-right: 10%;
+    
+    width: 20%;
 }
 
 .WebApps-link{
     background-color: #4571C9;
     border-radius: 12px;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
     font-size: 1.5rem;
     color: white;
 }
@@ -112,8 +116,7 @@ header nav {
     padding-top: 10%;
     /* padding-bottom: 10%;  */
     height: 60vh;
-    background: #1B212C;
-    
+    background: #1B212C; 
 }
 
 .Main-Call-To-Action h1{
@@ -148,7 +151,7 @@ header nav {
     flex-direction: row;
     justify-content: space-between;
     background:#F7F7F7;
-    height: 45vh;
+    height: 50vh;
     padding-top: 4%;
     padding-bottom:4%;
     padding-left: 5%;
@@ -214,11 +217,13 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 45vh;
+    height: 60vh;
     background: #F9EFE6;
 }
 
 .free-trial h2{
+    
+    padding-bottom: 2%;
     font-size: 2.5rem;
     
     color:#1B212C;
@@ -236,6 +241,16 @@ img{
     color: white;
 }
 
+.free-trial-person-1 {
+    width: 25vh;
+    align-self: start;
+    padding-left:5%;
+    padding-top: 2%;
+}
+
+.free-trial-person-1 img{
+    border-radius: 15px;
+}
 /* ----------footer styles-------------------------------------  */
 footer{
     display: flex;    
@@ -283,6 +298,7 @@ footer{
 .EmailForm-SocialMedia-Container{
     display: flex;
     flex-direction: row;
+    align-items: center;
     padding-top: 5%;
     padding-bottom: 5%;   
     background: #1B212C;
@@ -345,6 +361,109 @@ footer{
     font-size: 1rem;
     padding-left: 5%;
 }
+
+/* -------------------Media Queries --------------------- */
+
+@media (max-width: 1024px){
+    .Main-Call-To-Action {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10%;
+        height: 70vh;
+        background: #1B212C; 
+    }
+
+    .Main-Call-To-Action h1{
+        font-size: 4rem;
+        margin-bottom: 2%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .Main-Call-To-Action p{
+        font-size: 2rem;
+        width: 55%;
+        margin-bottom: 2%;
+        color:#EC3944;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+   /* ------------- width 1024px News Updates Section----- */
+
+   .News-Updates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background:#F7F7F7;
+    height: 70vh;
+    padding-top: 4%;
+    padding-bottom:4%;
+    padding-left: 5%;
+    padding-right: 5%;
+    }
+
+    /* ------ Width 1024px Free-Trial section------------ */
+
+    .free-trial {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 75vh;
+        background: #F9EFE6;
+    }
+    
+    .free-trial h2{
+        padding-bottom: 2%;
+        padding-top: 3%;
+        font-size: 2.5rem;
+        color:#1B212C;
+    }
+    
+    .free-trial-person-1 {
+        width: 35vh;
+        align-self: start;
+        padding-left:5%;
+        padding-top: 2%;
+        
+    }
+
+    /* ----------- 1024px Footer Section--------------- */
+
+    footer{
+        display: flex;    
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 80vh;
+        background: #EC3944;
+      
+    }
+    
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 40vh;   
+    }
+    
+    .links-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-right: 5%;
+        padding-left: 5%; 
+    }
+    
+}
+
+/* --------- width 1024px Email Form section ----------- */
+
+   
+
+@media (max-width: 800px){}
+
+@media (max-width: 500px){}
 
 /* --------------------------------------------------------------------- */
 /* --------------------------------------------------------------------- */
@@ -414,7 +533,7 @@ footer{
     justify-content: space-between;
     flex-wrap: wrap;
     background:#F7F7F7;
-    height: 90vh;
+    height: 95vh;
     padding-top: 4%;
     padding-bottom:4%;
     padding-left: 5%;
@@ -430,8 +549,7 @@ footer{
     border: 1px solid black;
     border-radius: 12px;
     align-items: center;
-    margin-bottom: 3%;
-    
+    margin-bottom: 3%;    
 }
 
 .team-member-square img {
@@ -459,4 +577,15 @@ footer{
     color:#1B212C;
 }
 
+/* ----------- Free Trial section------------------ */
 
+.free-trial-person-2 {
+    width: 40vh;
+    align-self: flex-end;
+    padding-right:5%;
+    padding-top: 2%;
+}
+
+.free-trial-person-2 img{
+    border-radius: 15px;
+}
