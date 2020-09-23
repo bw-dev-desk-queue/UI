@@ -457,11 +457,131 @@ footer{
     
 }
 
-/* --------- width 1024px Email Form section ----------- */
+@media (max-width: 800px){
 
-   
+    .Main-Call-To-Action {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10%;
+        height: 75vh;
+        background: #1B212C; 
+    }
 
-@media (max-width: 800px){}
+    .Main-Call-To-Action h1{
+        font-size: 3rem;
+        margin-bottom: 2%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .Main-Call-To-Action p{
+        font-size: 2rem;
+        width: 70%;
+        margin-bottom: 2%;
+        color:#EC3944;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+   /* ------------- width 800px News Updates Section----- */
+
+   .News-Updates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background:#F7F7F7;
+    height: 70vh;
+    padding-top: 4%;
+    padding-bottom:4%;
+    padding-left: 5%;
+    padding-right: 5%;
+    }
+
+    .square-preview {
+        display: flex;
+        flex-direction: column;
+        background: #FFFFFF;
+        width: 32%;
+        border: 1px solid black;
+        border-radius: 12px;
+        align-items: flex-start;
+    }
+    
+    .square-preview h2 {
+        font-size: 1rem;
+        padding-right: 8%;
+        padding-left: 8%;
+        padding-top: 7%;
+        padding-bottom: 1%;
+      
+    }
+    
+    .square-preview h3 {
+        font-size: 1.5rem;
+        padding-right: 8%;
+        padding-left: 8%;
+        padding-top: 3%;
+        padding-bottom: 5%;
+        color:#1B212C;
+    }
+    
+    .square-preview p {
+        font-size: 1.2rem;
+        padding-right: 8%;
+        padding-left: 8%;
+        padding-top: 3%;
+        padding-bottom: 5%;
+        color:#1B212C;
+    }
+
+    .square-preview-image{
+        flex-grow: 2;
+    }
+    
+    /* ------ Width 800px Free-Trial section------------ */
+
+    .free-trial h2{
+        padding-bottom: 2%;
+        padding-top: 3%;
+        font-size: 2rem;
+        color:#1B212C;
+    }
+    
+    .free-trial-person-1 {
+        width: 40vh;
+        align-self: start;
+        padding-left:5%;
+        padding-top: 2%;
+    }
+
+    /* ----------- width 800px Footer Section--------------- */
+
+    footer{
+        display: flex;    
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 80vh;
+        background: #EC3944;
+      
+    }
+    
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 40vh;   
+    }
+    
+    .links-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-right: 5%;
+        padding-left: 5%; 
+    }
+    
+}
 
 @media (max-width: 500px){}
 
