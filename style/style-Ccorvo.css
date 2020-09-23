@@ -95,10 +95,10 @@ header nav {
 .WebApps-link{
     background-color: #4571C9;
     border-radius: 12px;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
     font-size: 1.5rem;
     color: white;
 }
@@ -147,12 +147,12 @@ header nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background:#F7F7F7;
+    height: 45vh;
+    padding-top: 4%;
+    padding-bottom:4%;
     padding-left: 5%;
     padding-right: 5%;
-    background:#F7F7F7;
-    padding-top: 2%;
-    height: 45vh;
-    padding-bottom:4%;
 }
 
 .square-preview {
@@ -162,13 +162,14 @@ header nav {
     width: 30%;
     border: 1px solid black;
     border-radius: 12px;
+    align-items: center;
 }
 
 .square-preview h2 {
     font-size: 1rem;
     padding-right: 8%;
     padding-left: 8%;
-    padding-top: 8%;
+    padding-top: 7%;
     padding-bottom: 1%;
   
 }
@@ -178,15 +179,17 @@ header nav {
     padding-right: 8%;
     padding-left: 8%;
     padding-top: 3%;
-    padding-bottom: 8%;
+    padding-bottom: 5%;
+    color:#1B212C;
 }
 
 .square-preview p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-right: 8%;
     padding-left: 8%;
     padding-top: 3%;
-    padding-bottom: 8%;
+    padding-bottom: 5%;
+    color:#1B212C;
 }
 
 img{
@@ -194,19 +197,13 @@ img{
     max-height: 100%;
     display: block;
 }
-
-.square-preview-image {
-    
-    background: gray;
-}
 .square-preview a{
     font-size: 1rem;
     padding-right: 8%;
     padding-left: 8%;
     padding-top: 8%;
     flex-grow: 1;
-    
-    
+    color:#1B212C;
 }
 
 
@@ -244,24 +241,25 @@ footer{
     display: flex;    
     flex-direction: column;
     justify-content: flex-end;
-   
-    height: 55vh;
+    height: 50vh;
     background: #EC3944;
+    /* padding-right: 5%; */
+    /* padding-left: 5%; */
 }
 
 .footer-links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 25vh;
     
-    height: 20vh;
-  
 }
 
 .links-container{
     display: flex;
     flex-direction: column;
-    
+    padding-right: 5%;
+    padding-left: 5%; 
 }
 
 .links-container nav{
@@ -273,12 +271,13 @@ footer{
 .links-container h3 {
     font-size: 1.5rem;
     padding-bottom: 20%;
-    color: white;
+    color: #1B212C;
 }
 
 .links-container a{
     padding-bottom: 8%;
-    color:#A9A9A9;
+    /* color:#A9A9A9; */
+    color:#1B212C;
 }
 /* -------------------------------------------------------------- */
 .EmailForm-SocialMedia-Container{
@@ -286,9 +285,9 @@ footer{
     flex-direction: row;
     padding-top: 5%;
     padding-bottom: 5%;   
-    
     background: #1B212C;
-    
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 .EmailForm-SocialMedia-Container form {  
@@ -309,16 +308,19 @@ footer{
 }
 
 .EmailForm h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-bottom: 2%;
+    color: white;
 }
 
 .EmailForm p {
     font-size: 1rem;
+    color: white;
 }
 
 .material-icons{
     font-size: 4rem;
+    color: #EC3944;
 }
 
 /* -------------------------------------------------------------- */
@@ -329,13 +331,116 @@ footer{
     justify-content: flex-end;
     align-items: center;
     width: 70%;
-    padding-right: 2%;
+    padding-right: 2%;  
 }
 
 .socialMedia-icons a {
     padding-left: 2%;
 }
 
+.socialMedia-icons a img {
+    color: white;
+}
 .copywrite-info {
     font-size: 1rem;
+    padding-left: 5%;
 }
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+
+
+/* ----------------About.html styles below------------------------------- */
+
+/* -----------mission statement styles------------ */
+.mission-statement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    /* padding-bottom: 10%;  */
+    height: 35vh;
+    background: #1B212C;        
+}
+    
+.mission-statement h1{
+    font-size: 4.5rem;
+    margin-bottom: 2%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mission-statement p{
+    font-size: 3rem;
+    width: 55%;
+    margin-bottom: 2%;
+    color:#EC3944;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.mission-statement a{
+    font-size: 1.5rem;
+    background: #4571C9;
+    border-radius: 12px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    color: white;
+}
+
+/* ------------Team Profile styles---------------- */
+.team-profiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background:#F7F7F7;
+    height: 90vh;
+    padding-top: 4%;
+    padding-bottom:4%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.team-member-square {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #FFFFFF;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 12px;
+    align-items: center;
+    margin-bottom: 3%;
+    
+}
+
+.team-member-square img {
+    /* border-radius: 12px; */
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.team-member-square h2 {
+    font-size: 1.5rem;
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-top: 7%;
+    padding-bottom: 1%;
+  
+}
+
+.team-member-square h3 {
+    font-size: 1rem;
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    color:#1B212C;
+}
+
+
