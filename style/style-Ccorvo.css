@@ -802,7 +802,7 @@ footer{
         padding-right: 5%  
     }
 
-    header nav {
+    /* header nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between; 
@@ -828,7 +828,60 @@ footer{
         padding-right: 5%;
         font-size: 1rem;
         color: white;
-    }
+    } */
+
+
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            padding-left: 5%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            background:#FFFFFF;
+            width: 100%;
+            position: fixed; 
+        }
+
+        .DevDeskLogo{
+            font-size: 1.5rem;
+            padding-right: 10%;
+            
+        }
+        header nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            font-size: 1.2rem;
+            width: 25%;
+            padding-left: 15%;
+            padding-left: 50%;
+            
+        }
+
+        header nav a{
+            border: 1px solid black;
+            background:#1B212C;
+            text-align: center;
+            border-radius: 7px;
+            padding: 5%;
+            color: white;
+            margin-bottom: 1%;
+        }    
+
+        header nav a:hover{
+            border-bottom: 1px solid #1B212C;
+        }
+
+        .WebApps-container{
+            display: flex;
+            justify-content: center;
+            padding-right: 10%;
+            width: 20%;
+            display:none;
+        }
+
+        
     
     /* -------------- width 500px Main Section */
     
@@ -838,7 +891,7 @@ footer{
         justify-content: center;
         align-items: center;
         padding-top: 10%;
-        height: 30vh;
+        height: 45vh;
         background: #1B212C; 
         overflow-x: hidden;
     }
@@ -868,7 +921,7 @@ footer{
         align-items: center;
         justify-content: center;
         background:#F7F7F7;
-        height: 130vh;
+        height: 140vh;
         overflow-x: hidden;
     }
 
