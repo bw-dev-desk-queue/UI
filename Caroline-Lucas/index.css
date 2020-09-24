@@ -1,0 +1,228 @@
+
+/* RESET */
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+/*GENERAL STYLES */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif; 
+  color: #444;
+}
+
+h1,h2,h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+section {
+  padding: 4% 0;
+}
+footer {
+  padding: 2% 0;
+}
+
+a {
+  color: #444;
+  text-decoration: none;
+}
+a:hover {
+  color: #a53d2fd0;
+}
+/* Homepage */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 0;
+}
+nav .logo {
+  width: 10%;
+  margin-top: 2%;
+  margin-left: 4%;
+  padding: 1%;
+}
+
+nav .links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+nav .links a {
+  word-wrap: none;
+  letter-spacing: 1px;
+  color: crimson;
+}
+nav .links a:hover {
+  color: #a53d2fd0;
+}
+header {
+  display:flex;
+  margin-top: 3.3%;
+  height: 30%;
+  height: 40%;}
+
+.hero {
+  background-image: url('images/clip-customer-support.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 40%;
+}
+.button{
+margin-right: 40px;
+  margin-left: 40px;
+  padding: 12px 25px;
+  border-radius: 0px;
+  background-color: #bb1333;
+  -webkit-transition: background-color 400ms ease, opacity 400ms ease;
+  transition: background-color 400ms ease, opacity 400ms ease;
+  color: #fff;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  text-transform: none;
+}
+#products h2 {
+  text-align: center;
+  margin-bottom: 4%;
+}
+#products .container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.services .container div {
+  width: 20%;
+  text-align: center;
+  padding: 4% 0;
+  border: 3px solid #444;
+  background-color: #fff;
+}
+
+#top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#top .text {
+  width: 60%;
+  padding: 3%;
+  border: 3px solid #444;
+  background-color: #fff;
+}
+#top .text p {
+  text-align: justify;
+}
+.cards .container {
+  display: flex;
+  width: 70%; 
+  justify-content: space-around;
+}
+.cards .container div {
+  width: 40%;
+  height: 40vh;
+  margin: 2% 0;
+  display: flex;
+  align-items: flex-end;
+}
+.cards .container div .hide {
+  background-color: #fff;
+  height: 10vh;
+  display: none;
+}
+.cards .container div .hide h2 {
+  margin: 4%;
+}
+.cards .container div:hover .hide {
+  display: block;
+}
+.cards .container .farm {
+  background-image: url('../images/barn.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.cards .container .cook {
+  background-image: url('../images/cook.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.cards .container .produce {
+  background-image: url('../images/produce.jpg');
+  background-size: cover;
+  background-position: center;
+}
+.cards .container .linux {
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+}
+#contact h2 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+#contact .container {
+  display: flex;
+  justify-content: space-around;
+}
+
+#contact .container img {
+  width: 75%;
+}
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #a53d2fd0;
+  color: #fff;
+}
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: #444;
+}
+
+
+footer div nav {
+  position: static;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+footer div nav a {
+  margin: 2% 0;
+  color: #fff;
+}
+footer div nav a:hover {
+  color: #444;
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.social a {
+  color: #fff;
+}
+.social a:hover {
+  color: #444;
+}
+.copy {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.copy p {
+  margin: 0 5%;
+}
