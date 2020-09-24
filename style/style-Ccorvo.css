@@ -158,7 +158,7 @@ header nav a:hover{
     flex-direction: row;
     justify-content: space-between;
     background:#F7F7F7;
-    height: 50vh;
+    height: 40vh;
     padding-top: 4%;
     padding-bottom:4%;
     padding-left: 5%;
@@ -268,6 +268,7 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
     height: 25vh;
 }
 
@@ -371,7 +372,7 @@ footer{
         justify-content: center;
         align-items: center;
         padding-top: 10%;
-        height: 70vh;
+        height: 60vh;
         background: #1B212C; 
     }
 
@@ -397,7 +398,7 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     background:#F7F7F7;
-    height: 70vh;
+    height: 65vh;
     padding-top: 4%;
     padding-bottom:4%;
     padding-left: 5%;
@@ -410,19 +411,19 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        height: 75vh;
+        height: 70vh;
         background: #F9EFE6;
     }
     
     .free-trial h2{
         padding-bottom: 2%;
-        padding-top: 3%;
+        padding-top: 5%;
         font-size: 2.5rem;
         color:#1B212C;
     }
     
     .free-trial-person-1 {
-        width: 35vh;
+        width: 30vh;
         align-self: start;
         padding-left:5%;
         padding-top: 2%;
@@ -435,7 +436,7 @@ footer{
         display: flex;    
         flex-direction: column;
         justify-content: flex-end;
-        height: 80vh;
+        height: 60vh;
         background: #EC3944;
       
     }
@@ -450,11 +451,166 @@ footer{
     .links-container{
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         padding-right: 5%;
         padding-left: 5%; 
+        padding-top: 5%;
     }
     
+}
+
+@media (max-width: 1000px){
+    .Main-Call-To-Action {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10%;
+        height: 50vh;
+        background: #1B212C; 
+    }
+
+    /* ------------ width 1000px News Updates ------ */
+
+    .News-Updates {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background:#F7F7F7;
+        height: 45vh;
+        padding-top: 4%;
+        padding-bottom:4%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /* ----------- width 1000px free trial------ */
+
+    .free-trial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        background: #F9EFE6;   
+    }
+
+    .free-trial-person-1 {
+        width: 30vh;
+        align-self: start;
+        padding-left:5%;
+        padding-top: 2%;
+    }
+
+    /* ------- 1000px footer section----- */
+
+    footer{
+        display: flex;    
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 47vh;
+        background: #EC3944;
+    }
+}
+
+@media (max-width: 850px){
+    .Main-Call-To-Action {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10%;
+        height: 45vh;
+        background: #1B212C; 
+    }
+
+    .Main-Call-To-Action h1{
+        font-size: 2.5rem;
+        margin-bottom: 2%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .Main-Call-To-Action p{
+        font-size: 1.5rem;
+        width: 55%;
+        margin-bottom: 2%;
+        color:#EC3944;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    /* ----------- width 850px News Updates --------- */
+
+    .News-Updates {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background:#F7F7F7;
+        height: 55vh;
+        padding-top: 4%;
+        padding-bottom:4%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .square-preview h2 {
+        font-size: 1rem;
+        padding-right: 8%;
+        padding-left: 8%;
+        padding-top: 7%;
+        padding-bottom: 1%;
+      
+    }
+    
+    .square-preview h3 {
+        font-size: 1rem;
+        padding-right: 8%;
+        padding-left: 8%;
+        padding-top: 3%;
+        padding-bottom: 5%;
+        color:#1B212C;
+    }
+    
+    .square-preview p {
+        font-size: 1rem;
+        padding-right: 8%;
+        padding-left: 8%;
+        padding-top: 3%;
+        padding-bottom: 5%;
+        color:#1B212C;
+    }
+
+    /* -------width 850px free-trial section */
+
+    .free-trial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        background: #F9EFE6;   
+    }
+
+    .free-trial h2{
+        padding-bottom: 2%;
+        font-size: 2rem;
+        color:#1B212C;
+    }
+    
+    .free-trial-person-1 {
+        width: 25vh;
+        align-self: start;
+        padding-left:5%;
+        padding-top: 2%;
+    }
+
+    footer{
+        display: flex;    
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 60vh;
+        background: #EC3944;
+    }
 }
 
 @media (max-width: 800px){
@@ -465,7 +621,7 @@ footer{
         justify-content: center;
         align-items: center;
         padding-top: 10%;
-        height: 75vh;
+        height: 60vh;
         background: #1B212C; 
     }
 
@@ -491,7 +647,7 @@ footer{
         flex-direction: row;
         justify-content: space-between;
         background:#F7F7F7;
-        height: 70vh;
+        height: 55vh;
         padding-top: 4%;
         padding-bottom:4%;
         padding-left: 5%;
@@ -518,7 +674,7 @@ footer{
     }
     
     .square-preview h3 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         padding-right: 8%;
         padding-left: 8%;
         padding-top: 3%;
@@ -527,7 +683,7 @@ footer{
     }
     
     .square-preview p {
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding-right: 8%;
         padding-left: 8%;
         padding-top: 3%;
@@ -549,10 +705,80 @@ footer{
     }
     
     .free-trial-person-1 {
-        width: 40vh;
+        width: 20vh;
         align-self: start;
         padding-left:5%;
         padding-top: 2%;
+    }
+}
+
+@media (max-width: 700px){
+    .Main-Call-To-Action {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10%;
+        height: 52vh;
+        background: #1B212C; 
+        overflow-x: hidden;
+    }
+
+    .News-Updates {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background:#F7F7F7;
+        height: vh;
+        padding-top: 4%;
+        padding-bottom:4%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .free-trial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        background: #F9EFE6;   
+    }
+
+    .free-trial-person-1 {
+        width: 20vh;
+        align-self: start;
+        padding-left:5%;
+        padding-top: 2%;
+    }
+
+    .free-trial h2{
+        padding-bottom: 2%;
+        font-size: 1.7rem;
+        color:#1B212C;
+    }
+
+    footer{
+        display: flex;    
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 20vh;
+        background: #EC3944;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 25vh;
+        display: none;
+    }
+    
+    .links-container{
+        display: flex;
+        flex-direction: column;
+        padding-right: 5%;
+        padding-left: 5%; 
+        display:none;
     }
 }
 
@@ -612,24 +838,25 @@ footer{
         justify-content: center;
         align-items: center;
         padding-top: 10%;
-        height: 55vh;
+        height: 30vh;
         background: #1B212C; 
         overflow-x: hidden;
     }
 
     .Main-Call-To-Action h1{
-        font-size: .5rem;
+        font-size: 1.5rem;
         margin-bottom: 2%;
         color: white;
         font-family: Arial, Helvetica, sans-serif;  
     }
     
     .Main-Call-To-Action p{
-        font-size: 1.5rem;
+        font-size: 1rem;
         width: 70%;
         margin-bottom: 2%;
         color:#EC3944;
         font-family: 'Times New Roman', Times, serif;
+        padding-bottom: 4%;
     }
     
    /* ------------- width 500px News Updates Section----- */
@@ -641,7 +868,7 @@ footer{
         align-items: center;
         justify-content: center;
         background:#F7F7F7;
-        height: 210vh;
+        height: 200vh;
         overflow-x: hidden;
     }
 
@@ -692,7 +919,7 @@ footer{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 70vh;
+        height: 50vh;
         background: #F9EFE6;
         width: 95%;
         padding-left: 5%;
@@ -706,7 +933,7 @@ footer{
     }
     
     .free-trial-person-1 {
-        width: 35vh;
+        width: 25vh;
         align-self: center;
         padding-left:5%;
         padding-top: 5%;
@@ -717,7 +944,7 @@ footer{
         display: flex;    
         flex-direction: column;
         justify-content: flex-end;
-        height: 70vh;
+        height: 15vh;
         background: #EC3944;
         border: 1px solid black;
         overflow-x: hidden;
@@ -894,7 +1121,7 @@ footer{
     justify-content: space-between;
     flex-wrap: wrap;
     background:#F7F7F7;
-    height: 95vh;
+    height: 80vh;
     padding-top: 4%;
     padding-bottom:4%;
     padding-left: 5%;
@@ -960,7 +1187,7 @@ footer{
         justify-content: space-between;
         flex-wrap: wrap;
         background:#F7F7F7;
-        height: 140vh;
+        height: 110vh;
         padding-top: 4%;
         padding-bottom:4%;
         padding-left: 5%;
@@ -984,6 +1211,47 @@ footer{
         padding-top: 4%;
     }
 
+}
+
+@media (max-width:1000px){
+    footer{
+        display: flex;    
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 60vh;
+        background: #EC3944;
+    }
+
+    .free-trial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 65vh;
+        background: #F9EFE6;   
+    }
+}
+
+@media (max-width:850px){
+    .team-profiles {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background:#F7F7F7;
+        height: 95vh;
+        padding-top: 4%;
+        padding-bottom:4%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .free-trial-person-2 {
+        width: 40vh;
+        align-self: flex-end;
+        padding-right:5%;
+        padding-top: 4%;
+    }
 }
 
 @media (max-width: 800px){
@@ -1050,5 +1318,85 @@ footer{
     }
 
     /* --------------- Free Trial Section ------------ */
+    .free-trial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 55vh;
+        background: #F9EFE6;   
+    }
+}
+
+@media (max-width:500px){
     
+    .meet-the-team h1{
+        font-size: 3.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color:#1B212C;
+    }
+    
+    .team-profiles {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        flex-wrap: wrap;
+        background:#F7F7F7;
+        height: 350vh;
+        padding-top: 4%;
+        padding-bottom:4%;
+        /* padding-left: 5%;
+        padding-right: 5%; */
+    }
+    
+    .team-member-square {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: #FFFFFF;
+        width: 60%;
+        border: 1px solid black;
+        border-radius: 12px;
+        align-items: center;
+        margin-bottom: 1%;    
+    }
+    
+    .team-member-square img {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+    
+    .team-member-square h2 {
+        font-size: 1.5rem;
+        padding-right: 8%;
+        padding-left: 8%;
+        padding-top: 7%;
+        padding-bottom: 1%;
+        color:#1B212C;
+    }
+    
+    .team-member-square h3 {
+        font-size: 1rem;
+        padding-right: 8%;
+        padding-left: 8%;
+        padding-top: 3%;
+        padding-bottom: 5%;
+        color:#1B212C;
+    }
+
+    .free-trial-person-2 {
+        width: 40vh;
+        align-self: center;
+        padding-right:5%;
+        padding-top: 4%;
+    }
+
+    footer{
+        display: flex;    
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 20vh;
+        background: #EC3944;
+    }
 }
