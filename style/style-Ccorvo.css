@@ -1,0 +1,1473 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    font-size: 62.5%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a {
+  color: black;  
+}
+
+* {
+    /* border:1px solid black;  */
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* --------- Page styles begin below this line ----------------*/
+
+html{
+    background: #FFFFFF;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background:#FFFFFF;
+    width: 100%;
+    position: fixed; 
+}
+
+.DevDeskLogo{
+    font-size: 1.5rem;
+    
+}
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    font-size: 1.2rem;
+    width: 40%;
+    padding-left: 15%;
+}
+
+header nav a:hover{
+    border-bottom: 1px solid #1B212C;
+}
+
+.WebApps-container{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10%;
+    width: 20%;
+}
+
+.WebApps-link{
+    background-color: #4571C9;
+    border-radius: 12px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 1.5rem;
+    color: white;
+}
+
+/*  -------------  Main Content --- This is where your eyes will hit first */
+.Main-Call-To-Action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    height: 60vh;
+    background: #1B212C; 
+}
+
+.Main-Call-To-Action h1{
+    font-size: 4.5rem;
+    margin-bottom: 2%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Main-Call-To-Action p{
+    font-size: 3rem;
+    width: 55%;
+    margin-bottom: 2%;
+    color:#EC3944;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Main-Call-To-Action a{
+    font-size: 1.5rem;
+    background: #4571C9;
+    border-radius: 12px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    color: white;
+}
+
+/* ------------ Three blurbs with content --------------------- */
+.News-Updates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background:#F7F7F7;
+    height: 40vh;
+    padding-top: 4%;
+    padding-bottom:4%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.square-preview {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 12px;
+    align-items: center;
+}
+
+.square-preview h2 {
+    font-size: 1rem;
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-top: 7%;
+    padding-bottom: 1%;
+  
+}
+
+.square-preview h3 {
+    font-size: 1.5rem;
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    color:#1B212C;
+}
+
+.square-preview p {
+    font-size: 1.2rem;
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    color:#1B212C;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+.square-preview a{
+    font-size: 1rem;
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-top: 8%;
+    flex-grow: 1;
+    color:#1B212C;
+}
+
+/* ------ free trial section -----------------------------------*/
+.free-trial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    background: #F9EFE6;   
+}
+
+.free-trial h2{
+    padding-bottom: 2%;
+    font-size: 2.5rem;
+    color:#1B212C;
+}
+
+.free-trial a{
+    font-size: 1.5rem;
+    background: #4571C9;
+    border-radius: 12px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    color: white;
+}
+
+.free-trial-person-1 {
+    width: 25vh;
+    align-self: start;
+    padding-left:5%;
+    padding-top: 2%;
+}
+
+.free-trial-person-1 img{
+    border-radius: 15px;
+}
+
+/* ----------footer styles-------------------------------------  */
+footer{
+    display: flex;    
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 50vh;
+    background: #EC3944;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 25vh;
+}
+
+.links-container{
+    display: flex;
+    flex-direction: column;
+    padding-right: 5%;
+    padding-left: 5%; 
+}
+
+.links-container nav{
+    display: flex;
+    flex-direction: column; 
+    font-size: 1rem;
+}
+
+.links-container h3 {
+    font-size: 1.5rem;
+    padding-bottom: 20%;
+    color: #1B212C;
+}
+
+.links-container a{
+    padding-bottom: 8%;
+    color:#1B212C;
+}
+
+/* -------------------------------------------------------------- */
+.EmailForm-SocialMedia-Container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5%;
+    padding-bottom: 5%;   
+    background: #1B212C;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.EmailForm-SocialMedia-Container form {  
+    width: 30%;
+}
+
+.EmailForm-SocialMedia-Container form input{
+    border: 1px solid black;
+    padding: 7%;
+    width: 90%; 
+}
+
+.EmailForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.EmailForm h3 {
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+    color: white;
+}
+
+.EmailForm p {
+    font-size: 1rem;
+    color: white;
+}
+
+.material-icons{
+    font-size: 4rem;
+    color: #EC3944;
+}
+
+/* -------------------------------------------------------------- */
+
+.socialMedia-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 70%;
+    padding-right: 2%;  
+}
+
+.socialMedia-icons a {
+    padding-left: 2%;
+}
+
+.socialMedia-icons a img {
+    color: white;
+}
+.copywrite-info {
+    font-size: 1rem;
+    padding-left: 5%;
+}
+
+/* -------------------Media Queries --------------------- */
+
+@media (max-width: 1024px){
+    .Main-Call-To-Action {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10%;
+        height: 60vh;
+        background: #1B212C; 
+    }
+
+    .Main-Call-To-Action h1{
+        font-size: 4rem;
+        margin-bottom: 2%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .Main-Call-To-Action p{
+        font-size: 2rem;
+        width: 55%;
+        margin-bottom: 2%;
+        color:#EC3944;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+   /* ------------- width 1024px News Updates Section----- */
+
+   .News-Updates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background:#F7F7F7;
+    height: 65vh;
+    padding-top: 4%;
+    padding-bottom:4%;
+    padding-left: 5%;
+    padding-right: 5%;
+    }
+
+    /* ------ Width 1024px Free-Trial section------------ */
+
+    .free-trial {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 70vh;
+        background: #F9EFE6;
+    }
+    
+    .free-trial h2{
+        padding-bottom: 2%;
+        padding-top: 5%;
+        font-size: 2.5rem;
+        color:#1B212C;
+    }
+    
+    .free-trial-person-1 {
+        width: 30vh;
+        align-self: start;
+        padding-left:5%;
+        padding-top: 2%;
+        
+    }
+
+    /* ----------- 1024px Footer Section--------------- */
+
+    footer{
+        display: flex;    
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 60vh;
+        background: #EC3944;
+      
+    }
+    
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 40vh;   
+    }
+    
+    .links-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 5%;
+        padding-left: 5%; 
+        padding-top: 5%;
+    }
+    
+}
+
+@media (max-width: 1000px){
+    .Main-Call-To-Action {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10%;
+        height: 50vh;
+        background: #1B212C; 
+    }
+
+    /* ------------ width 1000px News Updates ------ */
+
+    .News-Updates {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background:#F7F7F7;
+        height: 45vh;
+        padding-top: 4%;
+        padding-bottom:4%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /* ----------- width 1000px free trial------ */
+
+    .free-trial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        background: #F9EFE6;   
+    }
+
+    .free-trial-person-1 {
+        width: 30vh;
+        align-self: start;
+        padding-left:5%;
+        padding-top: 2%;
+    }
+
+    /* ------- 1000px footer section----- */
+
+    footer{
+        display: flex;    
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 47vh;
+        background: #EC3944;
+    }
+}
+
+@media (max-width: 850px){
+    .Main-Call-To-Action {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10%;
+        height: 45vh;
+        background: #1B212C; 
+    }
+
+    .Main-Call-To-Action h1{
+        font-size: 2.5rem;
+        margin-bottom: 2%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .Main-Call-To-Action p{
+        font-size: 1.5rem;
+        width: 55%;
+        margin-bottom: 2%;
+        color:#EC3944;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    /* ----------- width 850px News Updates --------- */
+
+    .News-Updates {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background:#F7F7F7;
+        height: 55vh;
+        padding-top: 4%;
+        padding-bottom:4%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .square-preview h2 {
+        font-size: 1rem;
+        padding-right: 8%;
+        padding-left: 8%;
+        padding-top: 7%;
+        padding-bottom: 1%;
+      
+    }
+    
+    .square-preview h3 {
+        font-size: 1rem;
+        padding-right: 8%;
+        padding-left: 8%;
+        padding-top: 3%;
+        padding-bottom: 5%;
+        color:#1B212C;
+    }
+    
+    .square-preview p {
+        font-size: 1rem;
+        padding-right: 8%;
+        padding-left: 8%;
+        padding-top: 3%;
+        padding-bottom: 5%;
+        color:#1B212C;
+    }
+
+    /* -------width 850px free-trial section */
+
+    .free-trial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        background: #F9EFE6;   
+    }
+
+    .free-trial h2{
+        padding-bottom: 2%;
+        font-size: 2rem;
+        color:#1B212C;
+    }
+    
+    .free-trial-person-1 {
+        width: 25vh;
+        align-self: start;
+        padding-left:5%;
+        padding-top: 2%;
+    }
+
+    footer{
+        display: flex;    
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 60vh;
+        background: #EC3944;
+    }
+}
+
+@media (max-width: 800px){
+
+    .Main-Call-To-Action {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10%;
+        height: 60vh;
+        background: #1B212C; 
+    }
+
+    .Main-Call-To-Action h1{
+        font-size: 3rem;
+        margin-bottom: 2%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .Main-Call-To-Action p{
+        font-size: 2rem;
+        width: 70%;
+        margin-bottom: 2%;
+        color:#EC3944;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+   /* ------------- width 800px News Updates Section----- */
+
+   .News-Updates {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background:#F7F7F7;
+        height: 40vh;
+        padding-top: 4%;
+        padding-bottom:4%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .square-preview {
+        display: flex;
+        flex-direction: column;
+        background: #FFFFFF;
+        width: 32%;
+        border: 1px solid black;
+        border-radius: 12px;
+        align-items: flex-start;
+    }
+    
+    .square-preview h2 {
+        font-size: 1rem;
+        padding-right: 8%;
+        padding-left: 8%;
+        padding-top: 7%;
+        padding-bottom: 1%;
+      
+    }
+    
+    .square-preview h3 {
+        font-size: 1.2rem;
+        padding-right: 8%;
+        padding-left: 8%;
+        padding-top: 3%;
+        padding-bottom: 5%;
+        color:#1B212C;
+    }
+    
+    .square-preview p {
+        font-size: 1rem;
+        padding-right: 8%;
+        padding-left: 8%;
+        padding-top: 3%;
+        padding-bottom: 5%;
+        color:#1B212C;
+    }
+
+    .square-preview-image{
+        flex-grow: 2;
+    }
+    
+    /* ------ Width 800px Free-Trial section------------ */
+
+    .free-trial h2{
+        padding-bottom: 2%;
+        padding-top: 3%;
+        font-size: 2rem;
+        color:#1B212C;
+    }
+    
+    .free-trial-person-1 {
+        width: 20vh;
+        align-self: start;
+        padding-left:5%;
+        padding-top: 2%;
+    }
+}
+
+@media (max-width: 700px){
+    .Main-Call-To-Action {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10%;
+        height: 52vh;
+        background: #1B212C; 
+        overflow-x: hidden;
+    }
+
+    .News-Updates {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background:#F7F7F7;
+        height: 35vh;
+        padding-top: 4%;
+        padding-bottom:4%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .free-trial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        background: #F9EFE6;   
+    }
+
+    .free-trial-person-1 {
+        width: 20vh;
+        align-self: start;
+        padding-left:5%;
+        padding-top: 2%;
+    }
+
+    .free-trial h2{
+        padding-bottom: 2%;
+        font-size: 1.7rem;
+        color:#1B212C;
+    }
+
+    footer{
+        display: flex;    
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 15vh;
+        background: #EC3944;
+    }
+
+    .footer-links {
+        /* display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 25vh; */
+        display: none;
+    }
+    
+    .links-container{
+        /* display: flex;
+        flex-direction: column;
+        padding-right: 5%;
+        padding-left: 5%;  */
+        display:none;
+    }
+}
+
+@media (max-width: 500px){
+    
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 2%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        background:#FFFFFF;
+        position: fixed; 
+        overflow-x: hidden;
+    }
+    
+    .DevDeskLogo{
+        font-size: 1.2rem; 
+        padding-right: 5%  
+    }
+
+    /* header nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between; 
+        font-size: 1.2rem;
+        width: 80%;
+        padding-left: 5%;
+        padding-right: 9%;
+    }
+
+    .WebApps-container{
+        display: flex;
+        justify-content: flex-start;
+        padding-right: 1%;
+        overflow-x: hidden; 
+    }
+    
+    .WebApps-link{
+        background-color: #4571C9;
+        border-radius: 12px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        padding-left: 10%;
+        padding-right: 5%;
+        font-size: 1rem;
+        color: white;
+    } */
+
+
+        header{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            padding-left: 5%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            background:#FFFFFF;
+            width: 100%;
+            position: fixed; 
+        }
+
+        .DevDeskLogo{
+            font-size: 1.5rem;
+            padding-right: 10%;
+            
+        }
+        header nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; 
+            font-size: 1.2rem;
+            width: 25%;
+            padding-left: 15%;
+            padding-left: 50%;
+            
+        }
+
+        header nav a{
+            border: 1px solid black;
+            background:#1B212C;
+            text-align: center;
+            border-radius: 7px;
+            padding: 5%;
+            color: white;
+            margin-bottom: 1%;
+        }    
+
+        header nav a:hover{
+            border-bottom: 1px solid #1B212C;
+        }
+
+        .WebApps-container{
+            display: flex;
+            justify-content: center;
+            padding-right: 10%;
+            width: 20%;
+            display:none;
+        }
+
+        
+    
+    /* -------------- width 500px Main Section */
+    
+    .Main-Call-To-Action {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10%;
+        height: 45vh;
+        background: #1B212C; 
+        overflow-x: hidden;
+    }
+
+    .Main-Call-To-Action h1{
+        font-size: 1.5rem;
+        margin-bottom: 2%;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;  
+    }
+    
+    .Main-Call-To-Action p{
+        font-size: 1rem;
+        width: 70%;
+        margin-bottom: 2%;
+        color:#EC3944;
+        font-family: 'Times New Roman', Times, serif;
+        padding-bottom: 4%;
+    }
+    
+   /* ------------- width 500px News Updates Section----- */
+
+
+   .News-Updates {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background:#F7F7F7;
+        height: 140vh;
+        overflow-x: hidden;
+    }
+
+    .square-preview {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #FFFFFF;
+        width: 65%;
+        border: 1px solid black;
+        border-radius: 12px;
+        align-items: flex-start;
+        margin-bottom: 5%;   
+    }
+    
+    .square-preview h2 {
+        font-size: 1rem;
+        padding-left: 8%;
+        padding-top: 7%;
+        padding-bottom: 1%;  
+    }
+    
+    .square-preview h3 {
+        font-size: 1.5rem;
+        padding-right: 8%;
+        padding-left: 8%;
+        padding-top: 3%;
+        padding-bottom: 5%;
+        color:#1B212C;
+    }
+    
+    .square-preview p {
+        font-size: 1.2rem;
+        padding-right: 8%;
+        padding-left: 8%;
+        padding-top: 3%;
+        padding-bottom: 5%;
+        color:#1B212C;
+    }
+
+    .square-preview-image{
+        flex-grow: 2;
+    }
+
+    /* ------ Width 500px Free-Trial section------------ */
+
+    .free-trial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 15vh;
+        background: #F9EFE6;
+        width: 95%;
+        padding-left: 5%;
+    }
+
+    .free-trial h2{
+        padding-bottom: 2%;
+        padding-top: 3%;
+        font-size: 1.2rem;
+        color:#1B212C;
+    }
+    
+    .free-trial-person-1 {
+        width: 25vh;
+        align-self: center;
+        padding-left:5%;
+        padding-top: 5%;
+        display: none;
+    }
+    /* -------- width 500px header section */
+
+    footer{
+        display: flex;    
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 15vh;
+        background: #EC3944;
+        overflow-x: hidden;
+    }
+    
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 40vh; 
+    }
+    
+    .links-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-right: 2%;
+        padding-left: 2; 
+        display: none;
+    }
+    
+    .links-container h3 {
+        font-size: 1.2rem;
+        padding-bottom: 20%;
+        color: #1B212C;
+    }
+    
+    .links-container a{
+        padding-bottom: 8%;
+        color:#1B212C;
+    }
+    /* -------- width 500px email form ---------------------------------------- */
+
+    .EmailForm-SocialMedia-Container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-top: 5%;
+        padding-bottom: 5%;   
+        background: #1B212C;
+        padding-right: 5%;
+        padding-left: 5%;
+        width: 100%;
+    }
+    
+    .EmailForm-SocialMedia-Container form {  
+        width: 40%;
+    }
+    
+    .EmailForm-SocialMedia-Container form input{
+        border: 1px solid black;
+        padding: 7%;
+        width: 100%; 
+    }
+    
+    .EmailForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 2%;
+    }
+    
+    .EmailForm h3 {
+        font-size: 1rem;
+        margin-bottom: 2%;
+        color: white;
+        padding-right: 3%;
+    }
+    
+    .EmailForm p {
+        font-size: .8rem;
+        color: white;
+    }
+
+    .email-form-icon {
+        padding-left: 5%;
+    }
+    
+    .material-icons{
+        font-size: 2rem;
+        color: #EC3944;
+        padding-left: 5%;
+    }
+    
+    /* --------- 500px social media section  ---------------------------------------- */
+    
+    .socialMedia-icons{
+        /* display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 70%;
+        padding-right: 2%;   */
+        display: none;
+    }
+    
+    .socialMedia-icons a {
+        padding-left: 4%;
+    }
+    
+    
+    .copywrite-info {
+        font-size: 1rem;
+        padding-left: 5%;
+    }   
+    
+}
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+
+
+/* ----------------About.html styles below------------------------------- */
+
+/* -----------mission statement styles------------ */
+.mission-statement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    height: 35vh;
+    background: #1B212C;        
+}
+    
+.mission-statement h1{
+    font-size: 4rem;
+    margin-bottom: 2%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mission-statement p{
+    font-size: 3rem;
+    width: 55%;
+    margin-bottom: 2%;
+    color:#EC3944;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.mission-statement a{
+    font-size: 1.5rem;
+    background: #4571C9;
+    border-radius: 12px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    color: white;
+}
+
+/* ------------Team Profile styles---------------- */
+
+.meet-the-team{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5%;
+    background: #F7F7F7;
+}
+
+.meet-the-team h1{
+    font-size: 3.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#1B212C;
+}
+
+.team-profiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background:#F7F7F7;
+    height: 80vh;
+    padding-top: 4%;
+    padding-bottom:4%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.team-member-square {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #FFFFFF;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 12px;
+    align-items: center;
+    margin-bottom: 3%;    
+}
+
+.team-member-square img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.team-member-square h2 {
+    font-size: 1.5rem;
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-top: 7%;
+    padding-bottom: 1%;
+    color:#1B212C;
+}
+
+.team-member-square h3 {
+    font-size: 1rem;
+    padding-right: 8%;
+    padding-left: 8%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    color:#1B212C;
+}
+
+/* ----------- Free Trial section------------------ */
+
+.free-trial-person-2 {
+    width: 40vh;
+    align-self: flex-end;
+    padding-right:5%;
+    padding-top: 2%;
+}
+
+.free-trial-person-2 img{
+    border-radius: 15px;
+}
+
+/*  ----------------------------------------------------------- */
+/* ------------------------------------------------------------- */
+/* ----------- @media for about-ccorvo.html  */
+@media (max-width: 1024px){
+
+    .team-profiles {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background:#F7F7F7;
+        height: 85vh;
+        padding-top: 4%;
+        padding-bottom:4%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .team-member-square h3 {
+        font-size: 1rem;
+        padding-right: 8%;
+        padding-left: 8%;
+        padding-top: 3%;
+        padding-bottom: 0;
+        color:#1B212C;
+    }
+    /* ------------------- Free Trial ----------------- */
+
+    .free-trial-person-2 {
+        width: 40vh;
+        align-self: flex-end;
+        padding-right:5%;
+        padding-top: 4%;
+    }
+
+    .free-trial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 55vh;
+        background: #F9EFE6;   
+    }
+
+    footer{
+        display: flex;    
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 50vh;
+        background: #EC3944;
+    }
+    
+}
+
+@media (max-width:1000px){
+    
+    .free-trial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 55vh;
+        background: #F9EFE6;   
+    }
+
+    footer{
+        display: flex;    
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 50vh;
+        background: #EC3944;
+    }
+}
+
+@media (max-width:850px){
+    .team-profiles {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background:#F7F7F7;
+        height: 75vh;
+        padding-top: 4%;
+        padding-bottom:4%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .free-trial-person-2 {
+        width: 40vh;
+        align-self: flex-end;
+        padding-right:5%;
+        padding-top: 4%;
+    }
+}
+
+@media (max-width: 800px){
+    .mission-statement{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10%;
+        height: 40vh;
+        background: #1B212C;        
+    }
+
+    .mission-statement p{
+        font-size: 3rem;
+        width: 70%;
+        margin-bottom: 2%;
+        color:#EC3944;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    /* ----------- wdith 800px Meet The Team Section ------ */
+    .team-profiles {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background:#F7F7F7;
+        height: 60vh;
+        padding-top: 4%;
+        padding-bottom:4%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .team-member-square {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: #FFFFFF;
+        width: 30%;
+        border: 1px solid black;
+        border-radius: 12px;
+        align-items: center;
+        margin-bottom: 3%;    
+    }
+    
+    .team-member-square h2 {
+        font-size: 1rem;
+        padding-right: 8%;
+        padding-left: 8%;
+        padding-top: 7%;
+        padding-bottom: 1%;
+        color:#1B212C;
+    }
+    
+    .team-member-square h3 {
+        font-size: 1rem;
+        padding-right: 8%;
+        padding-left: 8%;
+        padding-top: 3%;
+        padding-bottom: 5%;
+        color:#1B212C;
+    }
+
+    /* --------------- Free Trial Section ------------ */
+    .free-trial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 55vh;
+        background: #F9EFE6;   
+    }
+}
+
+@media (max-width:500px){
+    
+    .meet-the-team h1{
+        font-size: 3.5rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color:#1B212C;
+    }
+    
+    .team-profiles {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        flex-wrap: wrap;
+        background:#F7F7F7;
+        height: 225vh;
+        padding-top: 4%;
+        padding-bottom:4%;
+        /* padding-left: 5%;
+        padding-right: 5%; */
+    }
+    
+    .team-member-square {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: #FFFFFF;
+        width: 60%;
+        border: 1px solid black;
+        border-radius: 12px;
+        align-items: center;
+        margin-bottom: 1%;    
+    }
+    
+    .team-member-square img {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+    
+    .team-member-square h2 {
+        font-size: 1.5rem;
+        padding-right: 8%;
+        padding-left: 8%;
+        padding-top: 7%;
+        padding-bottom: 1%;
+        color:#1B212C;
+    }
+    
+    .team-member-square h3 {
+        font-size: 1rem;
+        padding-right: 8%;
+        padding-left: 8%;
+        padding-top: 3%;
+        padding-bottom: 5%;
+        color:#1B212C;
+    }
+
+    .free-trial-person-2 {
+        width: 40vh;
+        align-self: center;
+        padding-right:5%;
+        padding-top: 4%;
+    }
+
+    footer{
+        display: flex;    
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 20vh;
+        background: #EC3944;
+    }
+}
