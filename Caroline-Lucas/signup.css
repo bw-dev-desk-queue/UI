@@ -1,0 +1,481 @@
+html {
+  font-family: "Roboto Mono", sans-serif;
+}
+
+/* Start Header Styles */
+.signupHeader {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.5% 4%;
+}
+
+.header__brand {
+  display: flex;
+  text-decoration: none;
+}
+
+.header__brandLogo {
+  margin-right: 3%;
+}
+
+.header__brandText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  font-size: 200%;
+  color: red;
+  white-space: nowrap;
+}
+
+h1 p {
+  display: flex;
+  flex-direction: ;
+  justify-content: ;
+}
+
+
+
+.header__nav {
+  background: floralwhite;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  padding: 0 0;
+}
+
+.header__navLink {
+  font-size: 150%;
+  color: red;
+  text-decoration: none;
+  margin-right: 4%;
+}
+
+.header__navLinkSignUp {
+  text-decoration: ;
+}
+/* End Header Styles */
+
+/* Start Content Styles */
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin: 10% 10%;
+  color: #0a2738;
+}
+
+.content__text {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 48%;
+}
+
+.content__textHeadline {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.content__textDescription {
+  font-size: 2.4rem;
+  margin: 2% 0;
+  line-height: 1.2;
+}
+
+.headerloginButton {
+  background-color: none;
+  margin-right: 4%;
+  text-decoration: none;
+  red: white;
+  border: 2px solid red;
+  border-radius: 3px;
+}
+
+.content__img {
+  width: 48%;
+}
+
+/* home-newUser.html Styles */
+
+.newUser__content {
+  display: flex;
+  /* flex-flow: ; */
+  margin-top: 3%;
+  justify-content: center;
+}
+
+.newUser__contentText {
+  width: 25%;
+  margin-top: 4%;
+}
+
+.newUser__contentTextHeadline {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+.newUser__contentTextDescription {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.newUser__contentTextPBold {
+  font-weight: 700;
+}
+
+.newUser__content img {
+  position: absolute;
+  z-index: -1;
+}
+
+.newUser__contentImgBubble {
+  width: 30%;
+}
+
+.newUser__contentImgExit {
+  width: 2%;
+  margin: 1% 0 0 12.75%;
+}
+
+.newUser__contentImgDee {
+  margin: 29.5% 0 0 10%;
+  width: 12%;
+}
+
+/* signUp.html Styles */
+
+.content form label {
+  font-size: 1.8rem;
+}
+
+.content form input {
+  width: 100%;
+  margin: 1% 0 2% 0;
+  padding: 2% 0 2% 2%;
+  font-family: "Roboto Slab", serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #0a2738;
+  border: none;
+  border: solid 1px #66889c;
+  border-radius: 10px;
+}
+
+.content form input::placeholder {
+  color: grey;
+}
+
+.formFootnote {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 15%;
+}
+
+.content__textSignUp.createAccountBtn {
+  margin: 0 auto;
+  width: 95%;
+}
+
+.content__img.signUpImgDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signUpImg {
+  width: 60%;
+}
+
+.loginForm {
+  margin-bottom: 15%;
+}
+/* End Content Styles */
+
+/* Mobile Responsiveness */
+@media (max-width: 2000px) {
+  /*  */
+  .newUser__contentText {
+    width: 25%;
+    margin-top: 4%;
+  }
+
+  .newUser__contentTextHeadline {
+    font-size: 3.6rem;
+  }
+
+  .newUser__contentTextDescription {
+    font-size: 2.4rem;
+  }
+
+  .newUser__contentImgBubble {
+    width: 30%;
+  }
+
+  .newUser__contentImgExit {
+    width: 2%;
+    margin: 1% 0 0 12.75%;
+  }
+
+  .newUser__contentImgDee {
+    margin: 29.25% 0 0 9.75%;
+    width: 12%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .content__textHeadline {
+    font-size: 3.6rem;
+  }
+
+  .content__textSignUp,
+  .content__textLogInBtn {
+    font-size: 1.8rem;
+    padding: 4% 0;
+  }
+  /*  */
+  .newUser__contentText {
+    width: 35%;
+    margin-top: 4%;
+  }
+
+  .newUser__contentTextHeadline {
+    font-size: 3.6rem;
+  }
+
+  .newUser__contentTextDescription {
+    font-size: 2.4rem;
+  }
+
+  .newUser__contentImgBubble {
+    width: 40%;
+  }
+
+  .newUser__contentImgExit {
+    width: 2.5%;
+    margin: 1.25% 0 0 17.5%;
+  }
+
+  .newUser__contentImgDee {
+    margin: 39% 0 0 11%;
+    width: 12%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .content {
+    flex-flow: column-reverse nowrap;
+    margin: 0;
+  }
+
+  .content__text {
+    width: 100%;
+    font-family: "Roboto Mono", sans-serif;
+    margin-top: 2%;
+    padding: 0 10%;
+  }
+
+  .content__textHeadline {
+    font-size: 3.6rem;
+  }
+
+  .content__textDescription {
+    font-size: 2.4rem;
+    padding-right: 10%;
+    margin-top: 4%;
+  }
+
+  .content__img {
+    width: 100%;
+    padding: 5% 10% 0 10%;
+  }
+
+  .content__text a {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*  */
+  .newUser__contentText {
+    width: 40%;
+    margin-top: 4%;
+  }
+
+  .newUser__contentTextHeadline {
+    font-size: 3.6rem;
+  }
+
+  .newUser__contentTextDescription {
+    font-size: 2.4rem;
+  }
+
+  .newUser__contentImgBubble {
+    width: 50%;
+  }
+
+  .newUser__contentImgExit {
+    width: 3%;
+    margin: 1.5% 0 0 21.5%;
+  }
+
+  .newUser__contentImgDee {
+    margin: 48.75% 0 0 17%;
+    width: 22%;
+  }
+
+  /* signUp  */
+  .signUpImg {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__brandLogo,
+  .header__brandTextSlogan,
+  .header__loginButton,
+  .header__nav {
+    display: flex;
+  }
+
+  .fText {
+    margin: 5% 0;
+  }
+
+  .header__brandTextTitle {
+    font-size: 3.6rem;
+  }
+
+  .content {
+    flex-flow: column-reverse nowrap;
+    margin: 0;
+  }
+
+  .content__text {
+    font-family: "Roboto Mono", sans-serif;
+    width: 100%;
+    margin-top: 5%;
+    padding: 0 10%;
+  }
+
+  .content__textHeadline {
+    font-size: 2.4rem;
+  }
+
+  .content__textDescription {
+    font-size: 1.6rem;
+    padding-right: 10%;
+    margin-top: 4%;
+  }
+
+  .content__textSignUpBtn,
+  .content__textLogInBtn {
+    font-size: 1.8rem;
+    padding: 4% 0;
+    margin-top: 10%;
+    width: 100%;
+  }
+
+  /*  */
+  .newUser__contentText {
+    width: 45%;
+    margin-top: 4%;
+  }
+
+  .newUser__contentTextHeadline {
+    font-size: 3.6rem;
+  }
+
+  .newUser__contentTextDescription {
+    font-size: 1.8rem;
+  }
+
+  .newUser__contentImgBubble {
+    width: 55%;
+  }
+
+  .newUser__contentImgExit {
+    width: 3%;
+    margin: 1.5% 0 0 24%;
+  }
+
+  .newUser__contentImgDee {
+    margin: 53.75% 0 0 18%;
+    width: 24%;
+  }
+}
+
+@media (max-width: 700px) {
+  .newUser__contentTextHeadline {
+    font-size: 2.4rem;
+  }
+
+  .newUser__contentTextDescription {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  /*  */
+  .newUser__contentText {
+    width: 50%;
+    margin-top: 4%;
+  }
+
+  .newUser__contentTextHeadline {
+    font-size: 2rem;
+    line-height: 1;
+  }
+
+  .newUser__contentTextDescription {
+    font-size: 1.6rem;
+    line-height: 1;
+  }
+
+  .newUser__contentImgBubble {
+    width: 60%;
+  }
+
+  .newUser__contentImgExit {
+    width: 3%;
+    margin: 1.5% 0 0 26.5%;
+  }
+
+  .newUser__contentImgDee {
+    margin: 59% 0 0 19%;
+    width: 24%;
+  }
+}
+
+@media (max-width: 375px) {
+  .header__brandTextTitle {
+    font-size: 3rem;
+  }
+
+  .content__text {
+    padding: 0 15% 0 10%;
+  }
+
+  .content__textDescription {
+    margin-top: 8%;
+  }
+
+  .content__img {
+    padding: 0;
+  }
+}
